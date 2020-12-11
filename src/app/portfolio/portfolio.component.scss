@@ -1,0 +1,169 @@
+$bg: #2f2c33;
+
+
+@media only screen and (max-width: 992px) {
+    #port-outer {
+        height: 100%;
+        background-color: $bg;
+    }
+    
+    #port-inner {
+        height: 100%;
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        //grid-template-rows: 1fr 1fr 1fr 1fr;
+        //column-gap: 75px;
+    }
+    
+    #selterlyImgDiv {
+        // grid-column-start: 2;
+        // grid-column-end: 3;
+        display: flex;
+        width: auto;
+        justify-content: center;
+    }
+    
+    #imgSeltzerly {
+        //justify-self: right;
+        //margin-left: 100px;
+    }
+    
+    
+    
+    #seltzerlyBlerbDiv {
+        // grid-column-start: 3;
+        // grid-column-end: 4;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        
+        
+    }
+    
+    #selzterlyBlerb {
+        width: 65%;
+        //margin-right: 300px;
+        color: white;
+        font-size: 14px;
+        //justify-self: left;
+    }
+    
+    #shelfDiv {
+        // grid-column-start: 2;
+        // grid-column-end: 3;
+        display: flex;
+        width: auto;
+        justify-content: center;
+    }
+    
+    #imgShelf {
+        //margin-left: 100px;
+        //justify-self: right;
+        
+    }
+    
+    #shelfBlerbDiv {
+        // grid-column-start: 3;
+        // grid-column-end: 4;
+        height: auto;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        background-color: $bg;
+    }
+    
+    #shelfBlerb {
+        width: 65%;
+        //margin-right: 300px;
+        color: white;
+        font-size: 14px;
+        //justify-self: right;
+        
+    }
+    
+
+
+}
+
+@media only screen and (min-width: 993px) {
+
+#port-outer {
+    height: 100vh;
+    background-color: $bg;
+}
+
+#port-inner {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr 50% 1fr;
+    grid-template-rows: 400px 400px auto;
+    column-gap: 25px;
+    background-color: $bg;
+}
+
+#selterlyImgDiv {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+#imgSeltzerly {
+    //justify-self: right;
+    //margin-left: 100px;
+}
+
+
+
+#seltzerlyBlerbDiv {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    
+    
+}
+
+#selzterlyBlerb {
+    width: 65%;
+    //margin-right: 300px;
+    color: white;
+    font-size: 16px;
+    //justify-self: left;
+}
+
+#shelfDiv {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+#imgShelf {
+    //margin-left: 100px;
+    //justify-self: right;
+    
+}
+
+#shelfBlerbDiv {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+#shelfBlerb {
+    width: 65%;
+    //margin-right: 300px;
+    color: white;
+    font-size: 16px;
+    //justify-self: right;
+    
+}
+
+}

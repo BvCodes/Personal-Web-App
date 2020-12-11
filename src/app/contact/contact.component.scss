@@ -1,0 +1,30 @@
+$bg: #2f2c33;
+
+#wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: $bg;
+}
+
+#freelance {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+    
+}
+
+#socials {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+}

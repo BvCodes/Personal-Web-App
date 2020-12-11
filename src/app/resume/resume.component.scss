@@ -1,0 +1,53 @@
+$bg: #2f2c33;
+$dropD: #dede6f;
+
+@media only screen and (max-width: 650px) {
+
+    #resOutter {
+        display: flex;
+        height: 100vh;
+        justify-content: space-evenly;
+        background-color: $bg;
+    }
+
+    #resumeIframe {
+        display: none;
+        grid-column: 2;
+    }
+
+    #resLink {
+        margin-top: 300px;
+        height: 25px;
+        width: 250px;
+        //background-color: $bg;
+        text-align: center;
+    }
+
+    #resLink:link {
+        color: white;
+    }
+    #resLink:hover {
+        color: $dropD
+    }
+    #resLink:visited {
+        color: white;
+    }
+
+}
+
+@media only screen and (min-width: 651px) {
+
+#resOutter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#resumeIframe {
+    grid-column: 2;
+}
+
+#resLink {
+    display: none;
+}
+
+}

@@ -1,0 +1,28 @@
+<div id="wrapper">
+<mat-toolbar id="toolbar">
+  <img src="../assets/BVK_Logo_1600px.png" id="logo" alt="BVK logo" height="100" width="100">
+  <span id="spacer"></span>
+  <span id="nav">
+    <div id="navCollapse">
+      <ul>
+        <li><a routerLink="/home"><button mat-button class="navButt">home</button></a></li>
+        <li><a routerLink="/portfolio"><button mat-button class="navButt">portfolio</button></a></li>
+        <li><a routerLink="/resume" class="purp"><button mat-button class="navButt">resume</button></a></li>
+        <li><a routerLink="/contact" class="purp"><button mat-button class="navButt">contact</button></a></li>
+      </ul>
+    </div>
+  </span>
+  <button mat-icon-button id="burgerButton" (click)="this.opacityHide()">
+    <mat-icon id="menu">menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div id="dropD">
+  <h1>Brett <br> Van Keppel</h1>
+  <p>Bloomington, IN</p>
+  <h2>Front End <br> JavaScript <br> Angular <br> Developer</h2>
+</div>
+
+<router-outlet></router-outlet>
+
+</div>
